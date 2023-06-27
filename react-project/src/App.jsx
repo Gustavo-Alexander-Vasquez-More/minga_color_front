@@ -9,15 +9,15 @@ export default function App() {
         <img className="w-[3.5rem]  " src="/logo.png" alt="logo" />
       </nav>
       <div className="w-full h-[85vh] flex flex-col items-center justify-center md:flex md:flex-col md:h-[55vh] gap-8">
-        <div className="w-[90%] h-[12vh] md:h-[4rem]" id="TITULO" >
-          <h1 className="text-[#FFF] text-[2.3rem] text-center font-roboto font-bold ">Your favorite comic book store</h1>
+        <div className="w-[90%] h-[12vh] md:h-[4rem] lg:flex lg:justify-center" id="TITULO" >
+          <h1 className="text-[#FFF] text-[2rem] text-center font-roboto font-bold sm:text-[2.3rem] lg:w-[70%] lg:flex lg:justify-center lg:items-center">Your favorite comic book store<p className="hidden lg:block lg:w-[2rem] lg:h-[2.2rem] lg:text-[1.5rem]">✨</p></h1>
         </div>
-        <div className="md:h-[2rem] md:w-[70%] md:text-center md:text-[1.2rem] md:text-[#FFF] hidden md:block lg:w-[40%] lg:h-[4rem]">Explore our catalog to live the adventure of your life</div>
-        <button id="buton-web" className="hidden lg:block lg:bg-[#5b34c5] lg:w-[15%] lg:h-[2.5rem] lg:text-[#FFF] lg:mb-[12rem] lg:rounded-[10px] font-bold font-roboto ">Let´s go!</button>
-        <div id="texto-mobile" className="w-[90%] text-center h-[13vh] flex items-center md:hidden">
-          <p className="text-[#FFF] text-[0.9rem]" >From classics to novelties, we have everything you need to immerse yourself in your favorite universes. Explore our catalog and live the adventure of your life.</p>
+        <div className="md:h-[2rem] md:w-[70%] md:text-center md:text-[1.2rem] md:text-[#FFF] hidden lg:w-[40%] lg:h-[4rem] lg:block">Explore our catalog to live the adventure of your life </div>
+        <button id="buton-web" className="hidden lg:block lg:bg-[#5b34c5] lg:w-[15%] lg:h-[2.8rem] lg:text-[#FFF] lg:mb-[12rem] lg:rounded-[10px] font-bold font-roboto ">Let´s go!</button>
+        <div id="texto-mobile" className="w-[90%] text-center h-[13vh] flex items-center md:w-[60%]  ">
+          <p className="  text-[#FFF] text-[0.9rem] sm:text-[1.1rem] lg:hidden " >From classics to novelties, we have everything you need to immerse yourself in your favorite universes. Explore our catalog and live the adventure of your life.</p>
         </div>
-        <div id="buton-mobile" className="md:hidden bg-[#5b34c5] w-[80%] h-[6.5vh] flex justify-center items-center text-[#FFF] text-[1.5rem] rounded-[50px] mb-[4rem]">Started</div>
+        <button id="buton-mobile" className="md:hidden bg-[#5b34c5] w-[80%] h-[6.5vh] flex justify-center items-center text-[#FFF] text-[1.5rem] rounded-[50px] mb-[4rem] sm:w-[50%]">Started</button>
       </div>
     </header>
     <main className="hidden lg:block lg:h-[35vh] lg:w-[100%] lg:flex justify-center items-center">
@@ -46,7 +46,7 @@ export default function App() {
         </div>
       </div>
     </main>
-    <footer className="w-full h-[27vh] flex flex-col justify-around items-center lg:h-[50vh] md:h-[40vh] ">
+    <footer className="w-full h-[27vh] flex flex-col justify-around items-center lg:h-[50vh] md:h-[40vh] sm:py-[1rem] ">
       <img className="lg:h-[9rem] lg:w-full hidden lg:block rounded-b-[150px]" src="./footer.png" alt="" />
       <div className="flex w-full h-[5vh] text-[1.3rem] justify-around px-[5rem]">
         <h2>Home</h2>
@@ -70,9 +70,9 @@ export default function App() {
     <path fill-rule="evenodd" d="M19.7 3.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.84c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.84A4.225 4.225 0 0 0 .3 3.038a30.148 30.148 0 0 0-.2 3.206v1.5c.01 1.071.076 2.142.2 3.206.094.712.363 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.15 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965c.124-1.064.19-2.135.2-3.206V6.243a30.672 30.672 0 0 0-.202-3.206ZM8.008 9.59V3.97l5.4 2.819-5.4 2.8Z" clip-rule="evenodd"/>
   </svg>
       </div>
-      <div id="boton-footer" className="flex justify-center items-center rounded-[50px] bg-[#6d42e4] h-[2.5rem] w-[50%]">Donate<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 19">
+      <button id="boton-footer" className="flex justify-center items-center rounded-[50px] bg-[#6d42e4] h-[2.5rem] w-[50%] sm:w-[30%] ">Donate<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 19">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4C5.5-1.5-1.5 5.5 4 11l7 7 7-7c5.458-5.458-1.542-12.458-7-7Z"/>
-  </svg> </div>
+  </svg> </button>
     </footer>
     </div>
   );
