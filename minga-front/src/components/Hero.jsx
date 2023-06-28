@@ -11,7 +11,7 @@ export default function Hero() {
     <div id="texto-mobile" className="w-[90%] text-center h-[13vh] flex items-center md:w-[60%]  ">
       <p className="  text-[#FFF] text-[0.9rem] sm:text-[1.1rem] lg:hidden " >From classics to novelties, we have everything you need to immerse yourself in your favorite universes. Explore our catalog and live the adventure of your life.</p>
     </div>
-    <button id="buton-mobile" className="md:hidden bg-[#5b34c5] w-[80%] h-[6.5vh] flex justify-center items-center text-[#FFF] text-[1.5rem] rounded-[50px] mb-[4rem] sm:w-[50%]">Started</button>
+    <button id="buton-mobile" className=" lg:hidden bg-[#5b34c5] w-[80%] h-[6.5vh] flex justify-center items-center text-[#FFF] text-[1.5rem] rounded-[50px] mb-[4rem] sm:w-[50%]">Started</button>
   </div>
   );
 }
