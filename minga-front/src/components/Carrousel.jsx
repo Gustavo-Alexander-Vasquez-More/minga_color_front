@@ -44,7 +44,7 @@ export default function Carrousel() {
   }
 
   const currentCategory = categories[counter];
-  const { character_photo, cover_photo, description } = currentCategory;
+  const { character_photo, cover_photo, description, name } = currentCategory;
 
   return (
     <div  id="bg-container-main" className="hidden md:block bg-[#5b34c5] md:w-[90%] lg-w-[90%] xl-w-[95%] md:h-[24vh] md:flex rounded-[15px] " >
@@ -58,7 +58,7 @@ export default function Carrousel() {
         </div>
         <div id="secccion-derecha" className=" w-[50%] h-[24vh] md:flex md:justify-start md:items-center">
         <div id="texto-sec-derecha" className="md:flex md:flex-col text-[#FFF] lg:w-[65%]">
-          <h2>Shonen</h2>
+          <h2>{name}</h2>
           <p className="text-[0.8rem]">{categories[counter].description}</p>
         </div>
         <div id="sec-flecha-derecha" className="w-[35%] h-[24vh] flex justify-end items-center lg:px-[2rem]">
